@@ -1,0 +1,23 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  10
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates and writes the time averages of given list of fields.
+
+\*---------------------------------------------------------------------------*/
+
+#includeEtc "caseDicts/postProcessing/fields/fieldAverage.cfg"
+
+mean            yes;
+prime2Mean      no;
+base		time;
+//window		50;
+//windowName	w1;
+
+fields          (U p k epsilon);
+
+// ************************************************************************* //
